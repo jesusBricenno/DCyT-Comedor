@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:title" content="Comedor(0.1)" />
+    <!-- Descripción corta y atractiva -->
+    <meta property="og:description" content="Lleva un registro de las colaboraciones estudiantiles" />
+    <!-- Tipo de contenido -->
+    <meta property="og:type" content="website" />
+    <link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon">
+    <title>Comedor(0.1)</title>
+</head>
+<body>
+    <h3>Comedor de Estudiantes</h3>
+    <section id="comedor">
+        <div>
+            <button id="comedor_btAgregarEstudiante">Agregar Estudiante</button>
+        </div>
+    </section>
+    <section>
+        <table>
+            <thead>
+                <th>Carrera</th>
+                <th>Semestre</th>
+                <th>Cedula</th>
+                <th>Colaboracion</th>
+            </thead>
+            <tbody id="comedor_divAgregarEstudiante" ></tbody>
+        </table>
+    </section>
+    <script type="module">
+        import Cl_index from "./dist/Cl_index.js";
+        new Cl_index();
+    </script>
+</html>
