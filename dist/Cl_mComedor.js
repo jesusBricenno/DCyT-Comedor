@@ -7,6 +7,7 @@ export default class Cl_mComedor {
             return;
         }
         this.estudiantes.push(estudiante);
+        localStorage.setItem("estudiantes", JSON.stringify(this.listar()));
         callback(false);
     }
     listar() {

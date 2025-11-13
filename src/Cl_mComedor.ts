@@ -14,10 +14,10 @@ export default class Cl_mComedor {
     }
     
     this.estudiantes.push(estudiante);
+    localStorage.setItem("estudiantes", JSON.stringify(this.listar()));
     callback(false);
 }
-
- listar(): iEstudiante[] {
+  listar(): iEstudiante[] {
     let estudiantes: iEstudiante[] = [];
     this.estudiantes.forEach((e) => estudiantes.push(e.toJSON()));
     return estudiantes;
